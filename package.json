@@ -1,0 +1,17 @@
+{
+  "name": "com.ZeroProd.yamobads",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "com.ZeroProd.yamobads",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.ZeroProd.yamobads" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>YaMobAds</name>
+    <js-module name="YaMobAds" src="www/YaMobAds.js">
+        <clobbers target="YaMobAds" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="YaMobAds">
+                <param name="android-package" value="com.ZeroProd.yamobads.YaMobAds" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data
+                    android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION"
+                    android:value="false" />
+        </config-file>
+
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+
+        <source-file src="src/android/YaMobAds.java" target-dir="src/com/ZeroProd/yamobads/YaMobAds" />
+        <source-file src="src/android/StaticState.java" target-dir="src/com/ZeroProd/yamobads/StaticState" />
+        <source-file src="src/android/Utils.java" target-dir="src/com/ZeroProd/yamobads/Utils" />
+        <source-file src="src/android/InterstialEvents.java" target-dir="src/com/ZeroProd/yamobads/InterstialEvents" />
+        <source-file src="src/android/RewardedEvents.java" target-dir="src/com/ZeroProd/yamobads/RewardedEvents" />
+        <source-file src="src/android/StickyAdEvents.java" target-dir="src/com/ZeroProd/yamobads/StickyAdEvents" />
+
+        <framework src="com.yandex.android:mobileads:7.11.0"/>
+    </platform>
+</plugin>
