@@ -120,6 +120,6 @@ let _YaMobAds = function ()
     }
 }
 
-let YaMobAds = new _YaMobAds()
+var YaMobAds = new _YaMobAds()
 
 module.exports = YaMobAds;

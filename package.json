@@ -2,6 +2,7 @@
   "name": "com.ZeroProd.yamobads",
   "version": "0.0.1",
   "description": "",
+  "types": "./types/index.d.ts",
   "cordova": {
     "id": "com.ZeroProd.yamobads",
     "platforms": [
