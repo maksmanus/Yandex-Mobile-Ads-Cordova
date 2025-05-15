@@ -69,3 +69,4 @@
     }
 
     export var YaMobAds : _YaMobAds;
+    export var CapYaMobAds : _YaMobAds;

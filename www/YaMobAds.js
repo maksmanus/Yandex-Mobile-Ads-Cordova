@@ -123,3 +123,5 @@ let _YaMobAds = function ()
 var YaMobAds = new _YaMobAds()
 
 module.exports = YaMobAds;
+var CapYaMobAds = YaMobAds;
+export default CapYaMobAds;
