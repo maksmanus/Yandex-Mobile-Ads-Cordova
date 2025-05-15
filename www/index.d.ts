@@ -68,5 +68,6 @@
         DestroyStickyBanner(): void;
     }
 
-    export var YaMobAds : _YaMobAds;
-    export var CapYaMobAds : _YaMobAds;
+    export * from './YaMobAds';
+    import YaMobAds from './YaMobAds';
+    export default YaMobAds;

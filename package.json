@@ -2,9 +2,9 @@
   "name": "com.ZeroProd.yamobads",
   "version": "0.0.1",
   "description": "",
-  "types": "./types/index.d.ts",
-  "module": "./www/YaMobAds.js",
-  "main": "./www/YaMobAds.js",
+"types": "./www/index.d.ts",
+"module": "./www/YaMobAds.js",
+"main": "./www/YaMobAds.js",
   "cordova": {
     "id": "com.ZeroProd.yamobads",
     "platforms": [
