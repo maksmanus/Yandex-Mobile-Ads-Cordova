@@ -1,10 +1,9 @@
 {
-  "name": "com.ZeroProd.yamobads",
+  "name": "yamobads-cordova",
   "version": "0.0.1",
   "description": "",
-"types": "./www/index.d.ts",
-"module": "./www/YaMobAds.js",
-"main": "./www/YaMobAds.js",
+  "types": "./types/index.d.ts",
+  "main": "./www/YaMobAds.js",
   "cordova": {
     "id": "com.ZeroProd.yamobads",
     "platforms": [
@@ -15,6 +14,13 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksmanus/Yandex-Mobile-Ads-Cordova.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maksmanus/Yandex-Mobile-Ads-Cordova/issues"
+  },
+  "author": "zeroprod",
   "license": "ISC"
 }

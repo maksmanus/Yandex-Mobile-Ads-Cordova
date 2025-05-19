@@ -43,28 +43,90 @@
         onReturnedToApplication: string;
     }
 
-    export class _YaMobAds {
+    export class _YaMobAds 
+    {
+        /**
+         * Demo Blocks Yandex ads ids 
+         */
         DemoBlocks: DemoBlocks;
+        
+        /**
+         * InterstialEventsNames contains Interstial Yandex Ads Events, using `document.addEventListener(YaMobAds.InterstialEventsNames.onAdClicked, YOUR_FUNCTION)` 
+         * @example document.addEventListener(YaMobAds.InterstialEventsNames.onAdClicked, YOUR_FUNCTION)
+         */
         InterstialEventsNames: InterstialEventsNames;
+        /**
+         * RewardedEventsNames contains Rewarded Yandex Ads Events, using `document.addEventListener(YaMobAds.RewardedEventsNames.onAdClicked, YOUR_FUNCTION)`
+         * @example document.addEventListener(YaMobAds.RewardedEventsNames.onAdClicked, YOUR_FUNCTION)
+         */
         RewardedEventsNames: RewardedEventsNames;
+        /**
+         * StickyEventsNames contains Sticky banner Yandex Ads Events, using `document.addEventListener(YaMobAds.StickyEventsNames.onAdClicked, YOUR_FUNCTION)`
+         * @example document.addEventListener(YaMobAds.StickyEventsNames.onAdClicked, YOUR_FUNCTION)
+         */
         StickyEventsNames: StickyEventsNames;
 
+        /**
+         * Initializes Yandex Ads
+         */
         YandexAdsInit(): void;
+        /**
+         * Set User Content for Yandex Ads
+         * @param EnableUserContent - Enabling ads setting user content, type: `boolean`, using `YaMobAds.SetUserContent(true)`
+         * @example YaMobAds.SetUserContent(true)
+         */
         SetUserContent(EnableUserContent: boolean): void;
+        /**
+         * 
+         * @param EnablegeRestrictedUser enable restricted user for Yandex Ads, using `YaMobAds.SetAgeRestrictedUser(true)`
+         * @example YaMobAds.SetAgeRestrictedUser(true)
+         */
         SetAgeRestrictedUser(EnablegeRestrictedUser: boolean): void;
         
         // Interstitial
+        /**
+         * Loads Interstial Yandex ad
+         * @param AdBlockId - blockid
+         * using - `YaMobAds.LoadInterstialAd('ad-block-id)`
+         * @example YaMobAds.LoadInterstialAd('ad-block-id)
+         */
         LoadInterstialAd(AdBlockId: string): void;
+        /**
+         * Shows Interstial Yandex Ad
+         */
         ShowInterstialAd(): void;
+        /**
+         * Destroys Interstial Yandex ads
+         */
         DestroyInterstialAd(): void;
         
-        // Rewarded
+        /**
+         * Loads Rewarded Yandex Ads
+         * @param AdBlockId - blockid
+         * using - `YaMobAds.LoadRewardedAd('ad-block-id)`
+         * @example YaMobAds.LoadRewardedAd('ad-block-id)
+         */
         LoadRewardedAd(AdBlockId: string): void;
+        /**
+         * Shows Rewarded Yandex Ads
+         */
         ShowRewardedAd(): void;
+        /**
+         * Destroys Rewarded Yandex Ads 
+         */
         DestroyRewardedAd(): void;
         
         // Sticky Banner
+        /**
+         * Loads Sticky Banner Yandex ads
+         * @param AdBlockId - block id
+         * using - `YaMobAds.LoadStickyBannerAd('ad-block-id)`
+         * @example YaMobAds.LoadStickyBannerAd('ad-block-id)
+         */
         LoadStickyBannerAd(AdBlockId: string): void;
+        /**
+         * Destroys Sticky Banner Yandex ads
+         */
         DestroyStickyBanner(): void;
     }
 
